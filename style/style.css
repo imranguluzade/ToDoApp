@@ -1,0 +1,185 @@
+body {
+  background-color: #1e1e1e;
+  font-family: "Montserrat";
+}
+
+.header {
+  margin-top: 50px;
+  font-family: "Montserrat";
+  font-style: italic;
+  font-size: 4rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.logotype {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.s-line {
+  width: 50px;
+  height: 2px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.m-line {
+  width: 240px;
+  height: 2px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.b-line {
+  width: 900px;
+  height: 2px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+main {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  font-family: "Montserrat";
+  padding-left: 20px;
+}
+
+.btn-add {
+  width: 150px;
+  height: 50px;
+  background-color: #4f4f4f;
+  color: white;
+  border: 0px solid;
+  border-radius: 20px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: -100px;
+  transition: 0.3s;
+}
+
+.btn-add:hover{
+  background-color: #3d3d3d;
+}
+
+#task {
+  height: 50px;
+  width: 700px;
+  outline: 0;
+  border: 0;
+  border-radius: 20px;
+}
+
+section {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li {
+  font-size: 16px;
+  user-select: none;
+  cursor: pointer;
+  padding: 12px 8px 12px 12px;
+  width: 800px;
+  background-color: #4f4f4f;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 12px;
+  color: white;
+  font-weight: 700;
+  position: relative;
+  transition: 0.3s;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-image: url(../assets/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 8px;
+  left: 8px;
+  display: none;
+}
+
+ul li.checked {
+  color: #1e1e1e;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(../assets/checked.png);
+  display: none;
+}
+
+li span {
+  top: 5px;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: 8px;
+}
+
+ul li:hover {
+  padding-left: 50px;
+}
+
+ul li:hover::after,
+ul li:hover::before {
+  display: block;
+}
+
+.delete {
+  display: none;
+}
+
+.clear-all{
+  width: 150px;
+  height: 50px;
+  background-color: #4f4f4f;
+  color: white;
+  border: 0px solid;
+  border-radius: 20px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.clear-all:hover{
+  background-color: #3d3d3d;
+}
