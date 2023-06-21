@@ -5,6 +5,7 @@ const UL = document.querySelector("#myTasks");
 const trashImg = document.createElement("img");
 trashImg.src = "../assets/trash-can-solid.svg";
 const clearAllBtn = document.querySelector(".clear-all");
+const maxCharacterLimit = 50;
 
 function addTask(e) {
   e.preventDefault();
@@ -22,7 +23,15 @@ function addTask(e) {
   saveData();
 }
 
+function handleInput() {
+  if (input.value.length > maxCharacterLimit) {
+    input.value = input.value.slice(0, maxCharacterLimit);
+    alert("Max character limit is 50.");
+  }
+}
+
 form.addEventListener("submit", addTask);
+input.addEventListener("input", handleInput);
 
 UL.addEventListener("click", (el) => {
   if (el.target.tagName === "LI") {

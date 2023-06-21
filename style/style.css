@@ -1,3 +1,36 @@
+
+.container {
+  max-width: 1216px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .container {
+    width: 516px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1116px;
+  }
+}
+@media (min-width: 1299px) {
+  .container {
+    width: 1216px;
+  }
+}
+
 body {
   background-color: #1e1e1e;
   font-family: "Montserrat";
@@ -182,4 +215,175 @@ ul li:hover::before {
 
 .clear-all:hover{
   background-color: #3d3d3d;
+}
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .header {
+    margin-top: 25px;
+    font-size: 2rem;
+    gap: 20px;
+  }
+  .s-line {
+    width: 50px;
+  }
+  .m-line {
+    width: 240px;
+  }
+  .b-line {
+    width: 700px;
+  }
+  #task {
+    height: 50px;
+    width: 600px;
+  }
+
+  ul li {
+    font-size: 16px;
+    width: 650px;
+  }
+
+  .btn-add {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    margin-left: -100px;
+  }
+  li span {
+  top: 7px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 8px;
+}
+.clear-all{
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+}
+section {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+  .header {
+    margin-top: 25px;
+    font-size: 2rem;
+    gap: 15px;
+  }
+  .s-line {
+    width: 40px;
+  }
+  .m-line {
+    width: 150px;
+  }
+  .b-line {
+    width: 400px;
+  }
+  #task {
+    height: 40px;
+    width: 400px;
+  }
+
+  ul li {
+    font-size: 12px;
+    width: 440px;
+  }
+
+  .btn-add {
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+    margin-left: -50px;
+  }
+  li span {
+  top: 7px;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  right: 8px;
+}
+.clear-all{
+  width: 100px;
+  height: 40px;
+  font-size: 12px;
+}
+section {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  .header {
+    margin-top: 25px;
+    font-size: 2rem;
+    gap: 15px;
+  }
+  .s-line {
+    width: 30px;
+  }
+  .m-line {
+    width: 100px;
+  }
+  .b-line {
+    width: 300px;
+  }
+  #task {
+    height: 30px;
+    width: 300px;
+  }
+
+  ul li {
+    font-size: 12px;
+    width: 330px;
+  }
+
+  .btn-add {
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+    margin-left: -50px;
+  }
+  li span {
+  top: 7px;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  right: 8px;
+}
+.clear-all{
+  width: 80px;
+  height: 30px;
+  font-size: 12px;
+}
+section {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 }
