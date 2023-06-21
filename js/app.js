@@ -3,7 +3,7 @@ const input = document.querySelector("#task");
 const form = document.querySelector("form");
 const UL = document.querySelector("#myTasks");
 const trashImg = document.createElement("img");
-trashImg.src = "../assets/trash-can-solid.svg";
+trashImg.src = "./assets/trash-can-solid.svg";
 const clearAllBtn = document.querySelector(".clear-all");
 const maxCharacterLimit = 50;
 
